@@ -9,17 +9,6 @@ from flaskr.db import get_db
 bp = Blueprint('blog', __name__)
 
 
-def create_app():
-    app = ...
-    # existing code omitted
-
-    from . import blog
-    app.register_blueprint(blog.bp)
-    app.add_url_rule('/', endpoint='index')
-
-    return app
-
-
 @bp.route('/')
 def index():
     db = get_db()
@@ -109,4 +98,4 @@ def delete(id):
     db = get_db()
     db.execute('DELETE FROM post WHERE id = ?', (id,))
     db.commit()
-    return redirect(url_for('blog.index'))
+    return redirect(url_for('flaskr.index'))
