@@ -2,8 +2,7 @@ import os
 
 from flask import Flask
 
-from flaskr import blog
-from . import db, auth
+from . import db, auth, blog
 
 
 def create_app(test_config=None):
