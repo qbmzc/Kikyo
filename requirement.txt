@@ -2,7 +2,7 @@ Click==7.0
 Flask==1.0.2
 -e git+https://github.com/qbmzc/Kikyo.git@db5e17c0986a6e193284e67be2d01b45d69da387#egg=flaskr
 itsdangerous==1.1.0
-Jinja2==2.10
+Jinja2==2.10.1
 MarkupSafe==1.1.0
 python-dotenv==0.10.0
 Werkzeug==0.14.1
